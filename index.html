@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Kott Technologies Survey Form</h1>
+            <p id="description" class="description text-center">
+                Thank you for your cooperation
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current need?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current issue</option>
+                    <option value="student">Mobile repair</option>
+                    <option value="job">Pc or Laptop repair</option>
+                    <option value="learner">Virus infection</option>
+                    <option value="preferNo">General maintinance</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>How will you be paying?</p>
+                <label>
+                    <input name="user-recommend" value="credit-card" type="radio" class="input-radio" checked />Credit
+                    Card</label>
+                <label>
+                    <input name="user-recommend" value="paypal" type="radio" class="input-radio" />PayPal</label>
+
+                <label><input name="user-recommend" value="eth" type="radio" class="input-radio" />Ethereum</label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What is your favorite feature of Kott Technologies?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Hardware repair</option>
+                    <option value="projects">Software cleaning and protection</option>
+                    <option value="community">Mobile phone repair</option>
+                    <option value="openSource">Cusotmer service help</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What would you like to see improved?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+
+                <label><input name="prefer" value="Customer Service" type="checkbox" class="input-checkbox" />Customer
+                    service</label>
+                <label>
+                    <input name="prefer" value="Repair wait time" type="checkbox" class="input-checkbox" />Repair wait
+                    time</label>
+                <label><input name="prefer" value="repair-quality" type="checkbox" class="input-checkbox" />Repair
+                    quality</label>
+                <label><input name="prefer" value="Software protection" type="checkbox"
+                        class="input-checkbox" />Software protection</label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
