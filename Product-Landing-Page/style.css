@@ -1,0 +1,203 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/** global stuff **/
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/** Nav bar **/
+header {
+    position: fixed;
+    top: 0;
+    min-height: 70px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #999;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+}
+
+.logo {
+    width: 25vw;
+}
+
+@media (max-width: 650px) {
+    .logo {
+        margin-top: 15px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.logo>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>ul {
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav>ul>li {
+    list-style: none;
+}
+
+/** email input **/
+
+#email-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 100px;
+}
+
+#email-section>h2 {
+    margin-bottom: 15px;
+}
+
+#email-section input[type="email"] {
+    max-width: 275px;
+    padding: 5px;
+}
+
+#email-section input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+}
+
+#email-section input[type='submit']:hover {
+    background-color: orange;
+}
+
+.btn {
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/** Features Section **/
+
+#features .desc>h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#features .desc>ul>li {
+    padding: 5px;
+}
+
+/** How It Works **/
+#how-it-works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#how-it-works>iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+/** Pricing **/
+#pricing {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.product>.level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product>h2 {
+    margin-top: 15px;
+}
+
+.product>ol {
+    margin: 15px 0;
+}
+
+.product>ol>li {
+    padding: 5px 0;
+    list-style: none;
+}
+
+.product>button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+.product>button:hover {
+    background-color: orange;
+}

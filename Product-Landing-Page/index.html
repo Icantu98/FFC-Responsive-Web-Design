@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img id="header-img" src="	https://www.creality3dofficial.com/img/logo/logo-theme.png"
+                    alt="creality logo">
+            </div>
+
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li><a class="nav-link" href="#how-it-works">How It Works</a>
+                    </li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Stuff after the nav bar -->
+        <div class="container"></div>
+
+        <section id="email-section">
+            <h2>High class 3D printers at Low cost</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+                <input name="submit" id="submit" type="submit" class="btn" value="LEARN MORE">
+            </form>
+        </section>
+
+        <!-- Features Section -->
+        <div class='container'>
+            <section id='features'>
+                <div class='desc'>
+                    <h2>About Ender 3D Printer</h2>
+                    <ul>
+                        <li>Easy and Quick Assembly: It comes with several assembled parts, you only need about 2 hours
+                            to assemble 20 nuts well.</li>
+                        <li>Advanced Extruder Technology: Upgraded extruder greatly reduces plugging risk and bad
+                            extrusion; V-Shape with POM wheels makes it move noiseless, smoothly, and durable.</li>
+                        <li>Safety Protected Power Supply: Only needs 5 minutes for the hotbed to reach 110℃.</li>
+                        <li>Carborundum Glass Bed: Better adhesion when you need it, and easier to remove prints when
+                            cooled.</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- How it works -->
+            <section id='how-it-works'>
+                <iframe id='video' height='315' src='https://www.youtube.com/embed/ibsOYzXduYc' frameborder='0'
+                    allowfullscreen></iframe>
+            </section>
+
+            <!-- Pricing -->
+            <section id="pricing">
+                <div class='product' id='tier-1'>
+                    <div class='level'> Ender 3</div>
+                    <h2>$189.00</h2>
+                    <ol>
+                        <li>Easy and Quick Assembly.</li>
+                        <li>Advanced Extruder Technology.</li>
+                        <li>Safety Protected Power Supply.</li>
+                        <li>It is a great project for middle school and high school-aged students..</li>
+                    </ol>
+                    <button class='btn'>Select</button>
+                </div>
+                <div class='product' id='tier-2'>
+                    <div class='level'> Ender 3 Pro</div>
+                    <h2>$219.00</h2>
+                    <ol>
+                        <li>MeanWell Power Supply.</li>
+                        <li>More Stable.</li>
+                        <li>Superior Printing Surface.</li>
+                        <li>Enriched Accessories.</li>
+                    </ol>
+                    <button class='btn'>Select</button>
+                </div>
+                <div class='product' id='tier-3'>
+                    <div class='level'> Ender 3 Max</div>
+                    <h2>$269.00</h2>
+                    <ol>
+                        <li>Powerful Hotend Kit-Extremely Precise Printing.</li>
+                        <li>Large Print Size-Max Workspace, Max Production.</li>
+                        <li>All-metal Extruder-Smooth Filament Feed-in.</li>
+                        <li>TMC2208 High-performance silence driver.</li>
+                    </ol>
+                    <button class='btn'>Select</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
